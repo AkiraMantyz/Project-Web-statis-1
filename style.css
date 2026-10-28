@@ -1,0 +1,177 @@
+
+/* Pengaturan dasar halaman */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f8f3eb;
+    color: #332219;
+}
+
+/* Bagian header */
+header {
+    background-color: #493323;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+/* Navigasi */
+nav {
+    background-color: #302219;
+    padding: 15px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+}
+
+nav a:hover {
+    color: orange;
+}
+
+/* Bagian utama */
+section {
+    padding: 30px 20px;
+    text-align: center;
+    scroll-margin-top: 65px;
+}
+
+h2 {
+    color: #65432e;
+}
+
+/* Gambar hero dan galeri */
+.hero img,
+figure img {
+    width: 100%;
+    max-width: 600px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+figure {
+    margin: 15px auto;
+}
+
+/* Tombol */
+.tombol,
+button {
+    display: inline-block;
+    background-color: #65432e;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.tombol:hover,
+button:hover {
+    background-color: #9a633a;
+}
+
+/* Daftar menu */
+.daftar-menu {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+.kartu {
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px #cccccc;
+    transition: 0.3s;
+}
+
+.kartu:hover {
+    transform: translateY(-5px);
+}
+
+.kartu img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.harga {
+    color: #65432e;
+    font-weight: bold;
+}
+
+/* Formulir */
+form {
+    max-width: 450px;
+    margin: auto;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-top: 12px;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #aaaaaa;
+    border-radius: 5px;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 2px solid #9a633a;
+}
+
+/* Footer */
+footer {
+    background-color: #302219;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Tampilan HP */
+@media (max-width: 768px) {
+    .daftar-menu {
+        grid-template-columns: 1fr;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 5px;
+    }
+
+    .hero img,
+    figure img {
+        height: 230px;
+    }
+
+    section {
+        padding: 25px 15px;
+    }
+    
+}
